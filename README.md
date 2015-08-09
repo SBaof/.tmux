@@ -6,6 +6,8 @@ the configuration for tmux
 
     mv ~/.tmux ~/.tmux.orig
     mv ~/.tmux.conf ~/.tmux.conf.orig
+
 2.Clone and install this repo:
+
     git clone git://github.com/SBanf/dot-tmux.git/ ~/.tmux
     ln -s ~/.tmux/tmux.conf ~/.tmux.conf
