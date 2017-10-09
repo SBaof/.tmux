@@ -2,6 +2,7 @@
 the configuration for tmux
 
 # Installation
+
 1. Backup your old tmux configuration files:
 
 ```
@@ -16,7 +17,7 @@ $ git clone git@github.com:SBaof/dot-tmux.git ~/.tmux
 $ ln -s ~/.tmux/tmux.conf ~/.tmux.conf
 ```
 
-3. About powerline
+# About powerline
 
 > The powerline is from [erikw/tmux-powerline](https://github.com/erikw/tmux-powerline) & Modified by me
 > You can modified it by changing file tmux-powerline/themes/default.sh
