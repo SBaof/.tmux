@@ -9,5 +9,5 @@ the configuration for tmux
 
 2.Clone and install this repo:
 
-    git clone git://github.com/SBaof/dot-tmux.git/ ~/.tmux
+    git clone git@github.com:SBaof/dot-tmux.git ~/.tmux
     ln -s ~/.tmux/tmux.conf ~/.tmux.conf
