@@ -19,7 +19,7 @@ $ ln -s ~/.tmux/tmux.conf ~/.tmux.conf
 
 # About powerline
 
-> The powerline is from [erikw/tmux-powerline](https://github.com/erikw/tmux-powerline) & Modified by me
+> The powerline is from [erikw/tmux-powerline](https://github.com/erikw/tmux-powerline) & Modified by me<br>
 > You can modified it by changing file tmux-powerline/themes/default.sh
 
 * Turn off
