@@ -30,7 +30,7 @@ $ ln -s ~/.tmux/tmux.conf ~/.tmux.conf
     * earthquake
     * pwd
     * mailcount
-    * weather (not work for me 👿 )
+    * weather (fixed 😈 )
     * ...
 * add
     * segment motto && turn it on (tmux-powerline/segment/motto.sh)
