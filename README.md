@@ -35,4 +35,3 @@ $ ln -s ~/.tmux/tmux.conf ~/.tmux.conf
 * add
     * segment motto && turn it on (tmux-powerline/segment/motto.sh)
 
-
