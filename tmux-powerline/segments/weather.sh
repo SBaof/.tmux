@@ -76,19 +76,19 @@ __process_settings() {
 
 __yahoo_weather() {
 	degree=""
-	# if [ -f "$tmp_file" ]; then
-		# if shell_is_osx || shell_is_bsd; then
-			# last_update=$(stat -f "%m" ${tmp_file})
-		# elif shell_is_linux; then
-			# last_update=$(stat -c "%Y" ${tmp_file})
-		# fi
-		# time_now=$(date +%s)
+    if [ -f "$tmp_file" ]; then
+        if shell_is_osx || shell_is_bsd; then
+            last_update=$(stat -f "%m" ${tmp_file})
+        elif shell_is_linux; then
+            last_update=$(stat -c "%Y" ${tmp_file})
+        fi
+        time_now=$(date +%s)
 
-		# up_to_date=$(echo "(${time_now}-${last_update}) < ${update_period}" | bc)
-		# if [ "$up_to_date" -eq 1 ]; then
-			# __read_tmp_file
-		# fi
-	# fi
+        up_to_date=$(echo "(${time_now}-${last_update}) < ${update_period}" | bc)
+        if [ "$up_to_date" -eq 1 ]; then
+            __read_tmp_file
+        fi
+    fi
 
 	if [ -z "$degree" ]; then
 		weather_data=$(curl --max-time 4 -s "https://query.yahooapis.com/v1/public/yql?format=xml&q=SELECT%20*%20FROM%20weather.forecast%20WHERE%20u=%27${TMUX_POWERLINE_SEG_WEATHER_UNIT}%27%20AND%20woeid%20=%20%27${TMUX_POWERLINE_SEG_WEATHER_LOCATION}%27")
